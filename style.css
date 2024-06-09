@@ -1,0 +1,152 @@
+body {
+  font-family: 'Jaldi', sans-serif;
+}
+
+div.FCC-calculator-ext-container {
+  width: 360px;
+  padding: 10px;
+  margin: 0 auto;
+  transform: rotateX(20deg);
+  border-radius: 6px;
+  box-shadow: 0 0 12px 4px;
+  background-color: rgb(68, 31, 0); /* Old browsers */
+
+}
+
+div.FCC-calculator-int-container {
+  display: block;
+  padding: 10px 0;
+  background: rgb(181,189,200); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(62,80,91,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(62,80,91,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(62,80,91,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#3e505b',GradientType=0 ); /* IE6-9 */
+}
+
+div.FCC-calculator-display-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+div.FCC-calculator-display {
+  margin-bottom: 15px;
+  padding: 0 6px;
+  text-align: right;
+  font-size: 3em;
+  color: #f8f8f8;
+  background-color: #333;
+  -o-box-shadow: 0 0 3px .1px inset;
+  -ms-box-shadow: 0 0 3px .1px inset;
+  -moz-box-shadow: 0 0 3px .1px inset;
+  -webkit-box-shadow: 0 0 3px .1px inset;
+  box-shadow: 0 0 3px .1px inset;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+div.FCC-calculator-keypad-container {
+  text-align: center;
+}
+
+div.FCC-calculator-row {
+  display: inline-block;
+  margin: 1px 0;
+}
+
+div.FCC-calculator-num-button,
+div.FCC-calculator-ope-button,
+div.FCC-calculator-special-button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+div.FCC-calculator-num-container {
+  width: 80px;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 6px;
+  box-shadow: 0 0 1px .1px #333;
+  display: flex;
+  align-items: center;
+}
+
+div.FCC-calculator-num-container:hover {
+  cursor: grab;
+  -o-box-shadow: 0 0 1px .1px #333 inset;
+  -ms-box-shadow: 0 0 1px .1px #333 inset;
+  -moz-box-shadow: 0 0 1px .1px #333 inset;
+  -webkit-box-shadow: 0 0 1px .1px #333 inset;
+  box-shadow: 0 0 1px .1px #333 inset;
+}
+
+p.FCC-calculator-num,
+p.FCC-calculator-ope,
+p.FCC-calculator-special {
+  position: absolute;
+  margin: 0 0 0 34px;
+  font-size: 24px;
+}
+
+div.FCC-calculator-num-container {
+  color: #f8f8f8;
+  background-color: #333;
+}
+
+div.ope {
+  color: #333;
+  background-color: orange;
+  font-weight: 800;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+div.special {
+  color: #f8f8f8;
+  background-color: #991019;
+}
+
+div.last-row {
+  width: 330px;
+  text-align: left;
+}
+
+.last-row div.FCC-calculator-special-button {
+  float: left;
+}
+
+
+
+  /* click animation */
+
+@keyframes clicked {
+  0% {
+    background-color: #f8f8f8;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes clicked {
+  0% {
+    background-color: #f8f8f8;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+  /* animated classes */
+
+.clicked {
+  animation-name: clicked;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
